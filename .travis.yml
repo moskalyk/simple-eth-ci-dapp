@@ -9,7 +9,7 @@ before_script:
   - npm install -g typescript
   - npm install -g truffle
   - npm install -g tslint
-  - npm install -g ganache-cli
+  - npm install -g ethereumjs-testrpc
   - testrpc &
 script:
   - yarn tslint
