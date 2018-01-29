@@ -13,10 +13,11 @@
     "test": "react-scripts test --env=jsdom",
     "test-ci": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "truffle-test": "truffle test"
+    "truffle-test": "truffle test",
+    "tslint": "tslint --project tslint.json 'src/**/*.ts'"
   },
   "devDependencies": {
     "jest": "^22.1.4",
-    "jest-cli": "^22.1.4"
+    "jest-cli": "21.0.0"
   }
 }

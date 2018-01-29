@@ -1,11 +1,14 @@
 language: node_js
+node_js:
+ - "node"
 cache: yarn
 install:
   - yarn install
 before_script:
-  - npm install -g ethereumjs-testrpc
+  - npm install -g typescript jest-cli truffle tslint ethereumjs-testrpc
   - testrpc &
 script:
+  - set -e
   - yarn tslint
   - yarn test-ci
   - yarn truffle-test

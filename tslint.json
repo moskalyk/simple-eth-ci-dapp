@@ -1,8 +1,6 @@
 {
+    "semicolon": [true, "always"],
     "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
-    ],
     "jsRules": {},
     "rules": {},
     "rulesDirectory": []
