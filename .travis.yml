@@ -5,7 +5,9 @@ cache: yarn
 install:
   - yarn install
 before_script:
+  - npm install -g jest-cli@20.4
   - npm install -g typescript
+  - npm install -g truffle
   - npm install -g tslint
   - npm install -g ethereumjs-testrpc
   - testrpc &
