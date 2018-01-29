@@ -5,6 +5,7 @@ cache: yarn
 install:
   - yarn install
 before_script:
+  - npm install -g typescript
   - npm install -g tslint
   - npm install -g ethereumjs-testrpc
   - testrpc &
