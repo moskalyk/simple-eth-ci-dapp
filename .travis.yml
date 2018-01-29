@@ -8,6 +8,7 @@ before_script:
   - npm install -g typescript jest-cli truffle tslint ethereumjs-testrpc
   - testrpc &
 script:
+  - set -e
   - yarn tslint
   - yarn test-ci
   - yarn truffle-test
